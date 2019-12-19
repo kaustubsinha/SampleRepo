@@ -17,10 +17,9 @@ steps:
 - script: |
     python -m pip install --upgrade pip    
   displayName: 'Install dependencies'
-
-# Python package
 - task: Docker@2
   inputs:
     containerRegistry: 'mlopsserviceconnection'
-    repository: 'samplecontainer'
+    repository: 'samplecontainerrepo'
     command: 'buildAndPush'
+    Dockerfile: '**/dockerfile'
