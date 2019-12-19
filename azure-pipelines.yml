@@ -24,4 +24,3 @@ steps:
     containerRegistry: 'mlopsserviceconnection'
     repository: 'samplecontainer'
     command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
