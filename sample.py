@@ -1,1 +1,1 @@
-print("sample 1")
+print("sample 2")
